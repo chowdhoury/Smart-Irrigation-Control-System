@@ -213,7 +213,7 @@ function App() {
         }
       } catch (err) {
         console.error('Failed to check connection status:', err);
-        setNotification('Error checking connection status');
+        // setNotification('Error checking connection status');
       }
     };
   
@@ -334,12 +334,7 @@ function App() {
           offMotors={handleMotorsOff}
         />
 
-        {notification && (
-          <NotificationBanner
-            message={notification}
-            onClose={() => setNotification(null)}
-          />
-        )}
+       
       </div>
     </div>
   );
