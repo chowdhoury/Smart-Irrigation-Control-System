@@ -38,7 +38,7 @@ export default function SoilMoistureGrid({ moistureLevels }: SoilMoistureGridPro
               <div className="flex justify-between mb-2">
                 <span className="text-sm text-gray-500">Moisture Level</span>
                 <span className={`text-sm font-medium text-${color}-500`}>
-                  {level.toFixed(8)}%
+                  {level.toFixed(2)}%
                 </span>
               </div>
               <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
